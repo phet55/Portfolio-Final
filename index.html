@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/dstle.css">
+    
+</head>
+
+<body>
+
+    <header>
+    <div class="logo-area">
+        <div class="logo-box">Home</div>
+        <span>MY PORTFOLIO</span>
+    </div>
+
+    
+    <button class="hamburger" id="hamburger-btn" type="button"
+        aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-menu">
+        <li><a href="skills.html">About & Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
+
+
+    <main class="hero">
+
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+
+
+        <div class="floating-text text-left">
+            <p class="top">Back-End Developer</p>
+        </div>
+        <div class="floating-text text-right">
+            <p>
+                I'm interested in Back-End Development.My strengths are transforming complex problems into actionable
+                plans, learning quickly, adapting well, and enjoying working with a team to deliver high-quality work
+                that
+                meets goals.
+            </p>
+        </div>
+
+
+
+
+        <!-- ตัวหนังสือวิ่งพื้นหลัง -->
+        <div class="marquee-container">
+            <!-- ใส่ข้อความซ้ำกัน 2 รอบเพื่อให้เลื่อน (Loop) ได้เนียนกริบ -->
+            <div class="marquee-content">
+                Adison Phobiasi Adison Phobiasi
+            </div>
+        </div>
+
+        <!-- รูปภาพ-->
+        <img src="img/me.png" alt="Matthew Portrait" class="person-image">
+    </main>
+    <script>
+  
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('active');
+        hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+        hamburgerBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+</script>
+</body>
+
+
+</html>

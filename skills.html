@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Skills - My Portfolio</title>
+    <link rel="stylesheet" href="css/skill.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <div class="logo-box"><a class="logo-home" href="index.html">Home</a></div>
+            <span>MY PORTFOLIO</span>
+        </div>
+        <button class="hamburger" id="hamburger-btn" type="button"
+            aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+                <li><a class="active" href="skills.html">About & Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="page-content about-page">
+        <div class="page-heading about-heading">
+            <h1>About Me</h1>
+        </div>
+
+        <div class="about-intro">
+            <section class="about-card intro-card">
+                <div class="intro-icon" aria-hidden="true">👋</div>
+                <h2>Hi, I'm Adison Phobiasi.</h2>
+                <p>Aspiring Back-End Developer, currently studying Software Engineering at Nakhon Pathom Rajabhat University.</p>
+                <p>Interested in building robust and scalable server-side database systems using modern programming languages ​​and tools. Willing to apply foundational knowledge of database systems and web programming to develop efficient workflows and maintainable, high-quality code.</p>
+                <a class="resume-button" href="contact.html">Hire me <span aria-hidden="true">↗</span></a>
+            </section>
+
+            <section class="portrait-card">
+                <img src="img/IMG_0208.jpg" alt="Adison Phobiasi portrait">
+                <div class="portrait-caption">
+                    <div>
+                        <strong>@adison</strong>
+                        <small>AVAILABLE FOR WORK</small>
+                    </div>
+                    <a href="contact.html">Hire me</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="about-details">
+            <section class="about-card education-card">
+                <div class="card-icon" aria-hidden="true">🎓</div>
+                <span class="card-badge">Graduated 2026</span>
+                <div class="education-content">
+                    <p class="eyebrow">Nakhon Pathom Rajabhat University</p>
+                    <h2>Software Engineering</h2>
+                    <p class="eyebrow">Relevant coursework:</p>
+                    <ul class="course-list">
+                        <li>Web Programming</li>
+                        <li>Database Systems</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                </div>
+                <div class="gpa"><strong>3.95</strong><span>Highly satisfactory<br>/ 4.00 GPA</span></div>
+            </section>
+
+            <section class="about-card tech-card">
+                <div class="section-title">
+                    <div class="card-icon" aria-hidden="true">&gt;_</div>
+                    <h2>Tech Stack</h2>
+                </div>
+                <div class="stack-group">
+                    <p class="eyebrow">Core languages</p>
+                    <ul class="tag-list">
+                        <li>HTML5</li><li>CSS3</li><li>C++</li><li>Java</li><li>JavaScript</li><li>SQL</li>
+                    </ul>
+                </div>
+                
+                <div class="stack-group">
+                    <p class="eyebrow">Tools &amp; ecosystem</p>
+                    <ul class="tag-list">
+                        <li>VS Code</li><li>Git</li><li>GitHub</li><li>Figma</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">© 2026 Web Portfolio</footer>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('active');
+            hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+            hamburgerBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+    </script>
+</body>
+</html>

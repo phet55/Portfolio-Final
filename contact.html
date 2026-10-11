@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+     <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <div class="logo-box"><a class="logo-home" href="index.html">Home</a></div>
+            <span>MY PORTFOLIO</span>
+        </div>
+        <button class="hamburger" id="hamburger-btn" type="button"
+            aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+                <li><a href="skills.html">About & Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="page-content">
+        <div class="page-heading">
+            <h1>Contact</h1>
+            
+        </div>
+        <div class="contact-layout">
+            <section class="contact-card">
+                <h2>ช่องทางติดต่อ</h2>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a href="mailto:adisonphobiasi@gmail.com">adisonphobiasi@gmail.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/phet55">github.com/phet55</a></li>
+                </ul>
+               
+
+                <div class="logo-contact">
+                    <a href="mailto:adisonphobiasi@gmail.com">
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </a>
+                    <a href="https://github.com/phet55">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+            </section>
+            <form class="contact-form" action="#" method="post">
+                <h2>ส่งข้อความ</h2>
+                <label for="name">ชื่อ</label>
+                <input id="name" name="name" type="text" placeholder="กรอกชื่อของคุณ" required>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="กรอก Email ของคุณ" required>
+                <label for="message">ข้อความ</label>
+                <textarea id="message" name="message" placeholder="เขียนข้อความที่ต้องการติดต่อ" required></textarea>
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('active');
+            hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+            hamburgerBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+    </script>
+</body>
+</html>
