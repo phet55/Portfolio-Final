@@ -98,11 +98,9 @@
  .hero {
      position: relative;
      height: 100vh;
-     /* สูงเต็มหน้าจอ */
      display: flex;
      justify-content: center;
      align-items: flex-end;
-     /* ให้รูปคนติดขอบล่าง */
      overflow: hidden;
  }
 

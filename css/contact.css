@@ -197,7 +197,7 @@ h2 {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
-    transition: background .2s ease, transform .2s ease;
+    transition: .2s ease, transform .2s ease;
 }
 
 .contact-form button:hover {
