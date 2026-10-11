@@ -61,7 +61,7 @@ header {
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase;
+
 }
 
 .nav-links a:hover,
@@ -163,6 +163,7 @@ h2 {
 .project-card li {
     color: #555;
 }
+
 .project-box {
     display: grid;
     grid-template-columns: minmax(180px, .8fr) minmax(260px, 1.25fr) minmax(220px, 1fr);
@@ -187,7 +188,7 @@ h2 {
     display: block;
     width: min(150px, 70%);
     margin: 0 auto 18px;
-    
+
 }
 
 .box-pj h2 {
@@ -235,9 +236,10 @@ h2 {
     color: #555;
 }
 
-.description li + li {
+.description li+li {
     margin-top: 8px;
 }
+
 .description a {
     text-decoration: none;
     background-color: black;
@@ -290,6 +292,16 @@ h2 {
     margin-bottom: 14px;
 }
 
+footer{
+    background: #080808;
+}
+.site-footer {
+    padding: 20px ;
+    color: #ddd7d7;
+    font-size: 12px;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     header {
         top: 10px;
@@ -331,13 +343,15 @@ h2 {
         transform: translateY(0);
     }
 
-    .nav-links li+li {
+    .nav-links li {
         margin-top: 14px;
     }
 
     .nav-links a {
-        display: block;
+        color: #333;
         font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
     }
 
     .page-content {
@@ -364,6 +378,7 @@ h2 {
     .project-card img {
         height: clamp(150px, 45vw, 220px);
     }
+
     .project-box {
         grid-template-columns: 1fr;
         gap: 18px;

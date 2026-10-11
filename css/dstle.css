@@ -45,6 +45,11 @@
      font-size: 16px;
  }
 
+ .logo-home {
+     color: #fff;
+     text-decoration: none;
+ }
+
  .hamburger {
      display: none;
      border: 0;
@@ -75,7 +80,6 @@
      color: #333;
      font-size: 12px;
      font-weight: bold;
-     text-transform: uppercase;
      transition: color 0.2s ease;
  }
 
@@ -89,7 +93,7 @@
 
 
  /* =========================================
-           3. Hero Section (พื้นที่แสดงเนื้อหาหลัก)
+           Hero Section (พื้นที่แสดงเนื้อหาหลัก)
         ========================================= */
  .hero {
      position: relative;
@@ -138,7 +142,6 @@
 
  .marquee-content {
      display: inline-block;
-     /* ฟอนต์ยืดหยุ่นตามหน้าจอ เล็กสุด 80px, ใหญ่สุด 300px */
      font-size: clamp(80px, 20vw, 300px);
      font-weight: 900;
      color: #0d0d0d;
@@ -148,7 +151,7 @@
      animation: scroll-left 15s linear infinite;
  }
 
- /* คีย์เฟรมสั่งให้ขยับจากขวาไปซ้าย */
+
  @keyframes scroll-left {
      0% {
          transform: translateX(50%);

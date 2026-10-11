@@ -10,6 +10,9 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -61,7 +64,6 @@ header {
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .nav-links a:hover,
@@ -97,6 +99,7 @@ header {
     max-width: 1100px;
     margin: 0 auto;
     padding: 150px 0 70px;
+    flex: 1;
 }
 
 .page-heading {
@@ -223,6 +226,15 @@ h2 {
 .logo-contact a:hover {
     color: #555;
     transform: translateY(-3px);
+}
+footer{
+    background: #080808;
+}
+.site-footer {
+    padding: 20px ;
+    color: #ddd7d7;
+    font-size: 12px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
